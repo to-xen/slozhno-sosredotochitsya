@@ -9,4 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #000028; 
+  --main-font-family: 'IBM Plex mono';
+  --accent-color: #FF0070;
+  --main-color: #F1B2CE; 
+  --font-weight-normal: 400;
+  --font-size-normal: 1.12rem;
+  --font-weight-bold: 700;
+  --heading-higlighted-color: #000028; 
+  --focus-signs-color: #DB00FF; 
+  --focus-signs-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
+

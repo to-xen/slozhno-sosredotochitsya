@@ -2,3 +2,17 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #000028; 
+  --main-font-family: 'IBM Plex mono';
+  --accent-color: #FF0070;
+  --main-color: #F1B2CE; 
+  --font-weight-normal: 400;
+  --font-size-normal: 1.12rem;
+  --font-weight-bold: 700;
+  --heading-higlighted-color: #000028; 
+  --focus-signs-color: #DB00FF; 
+  --no-focus-sign-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --focus-sign-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+}
