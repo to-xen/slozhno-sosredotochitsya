@@ -5,51 +5,45 @@
 */
 
 .page.theme_light {
-  --bg-color: #FFF1F7;
-  --main-font-family: 'IBM Plex mono';
-  --accent-color: #FF8DCB;
-  --main-color: #353430; 
+  /* Переменные светлой темы */
+  --bg-color: #fff1f7;
+  --main-font-family: "IBM Plex mono";
+  --accent-color: #ff8dcb;
+  --accent-color-decorated-zone: #353430;
+  --accent-color-hover: rgba(53, 52, 48, 0.4);
+  --main-color: #353430;
   --font-weight-normal: 400;
   --font-size-normal: 1.12rem;
   --font-weight-bold: 700;
-  --heading-higlighted-color: #353430; 
-  --focus-signs-color: #FFC2E6;
+  --heading-higlighted-color: #353430;
+  --focus-signs-color: #ffc2e6;
   --focus-signs-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  background-image: url("../images/cover-image-light.png"); 
-  
-  .decorated-zone::before {
-    border-color: var(--main-color);
-  }
-
-  .decorated-zone::after {
-    border-color: var(--main-color);
-  }
-
+  background-image: url("../images/cover-image-light.png");
   .REC {
     visibility: hidden;
   }
+}
 
-  .header__theme-menu-button {
-    color: var(--main-color);
-  }
+@media (prefers-color-scheme: light) {
+  .page.theme_light {
+    /* Дублируем переменные светлой темы */
+    --bg-color: #fff1f7;
+    --main-font-family: "IBM Plex mono";
+    --accent-color: #ff8dcb;
+    --accent-color-decorated-zone: #353430;
+    --main-color: #353430;
+    --font-weight-normal: 400;
+    --font-size-normal: 1.12rem;
+    --font-weight-bold: 700;
+    --heading-higlighted-color: #353430;
+    --focus-signs-color: #ffc2e6;
+    --focus-signs-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --focus-sign-font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+    background-image: url("../images/cover-image-light.png");
 
-  .header__theme-menu-button:hover {
-    outline: 1px solid var(--main-color);
-  }
-
-  .header__theme-menu-button:focus {
-    outline: none;
-  }
-
-  .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-block-end: 1px solid var(--main-color);
-  }
-
-  .section-heading {
-    color: var(--main-color);
+    .REC {
+      visibility: hidden;
+    }
   }
 }
-  
-  
-  
+/* Остальные стили */
